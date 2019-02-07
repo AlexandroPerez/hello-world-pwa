@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+.wrapper {
+  max-width: 1080px;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #5e6b7d;
+  color: white;
+  padding: 15px;
+}
+@media screen and (min-width:1080px) {
+  .wrapper {
+    box-shadow: 10px 10px 10px #5e6b7d;
+    border: thin solid grey;
+    margin-bottom: 15px;
+  }
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 15px;
+  margin: 0 20px;
+  height: 86px;
+}
+
+nav a {
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px 15px;
+  padding: 5px 15px;
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none; 
+  margin: 0 0 0 20px;
+}
+nav a:hover,
+nav a:focus,
+nav a.active {
+  background-color: #b8ad7f;
+}
+
+.hero {
+  position: relative;
+  max-height: 380px;
+}
+
+.hero img {
+  width: 100%;
+}
+@media screen and (min-width: 588px) {
+  .hero img {
+    max-height: 380px;
+  }
+}
+
+.hero #credit {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+main {
+  padding: 25px;
+}
+@media screen and (min-width: 1080px) {
+  main {
+    padding: 25px 50px;
+  }
+}
+main img {
+  max-width: 100%;
+}
